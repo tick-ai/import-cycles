@@ -1,0 +1,18 @@
+[project]
+name = "import-cycles"
+version = "0.1.0"
+description = "Find the import cycles in a Python project, without running it."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+keywords = ["python", "import", "circular-imports", "static-analysis", "ci"]
+
+[project.scripts]
+import-cycles = "import_cycles:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["import_cycles"]
